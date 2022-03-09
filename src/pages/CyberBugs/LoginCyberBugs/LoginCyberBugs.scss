@@ -1,0 +1,19 @@
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+// button.ant-btn {
+//     background-color: #6675fb;
+//     border-color: #6675fb;
+// }
+
+.social {
+    button {
+        margin-left: 5px;
+        &:hover {
+            background-color: #68e1f1;
+            border-color: #68e1f1;
+        }
+    }
+}

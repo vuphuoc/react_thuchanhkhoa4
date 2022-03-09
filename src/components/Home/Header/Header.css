@@ -1,0 +1,16 @@
+.activeNavItem {
+    background-color: white;
+    color: black !important;
+}
+
+.header__userInfo {
+    color: white;
+}
+
+.header__userInfo_name {
+    margin: 0 10px;
+}
+
+.header__userInfo_avatar {
+    border-radius: 20px;
+}

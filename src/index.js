@@ -4,10 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//setup redux
+import store from './redux/configStore';
+import { Provider } from 'react-redux';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import { BrowserRouter, Router } from 'react-router-dom/cjs/react-router-dom.min';
+
+import { history } from './util/history';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={history}>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Router>
+
+  ,
   document.getElementById('root')
 );
 
